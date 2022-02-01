@@ -1,4 +1,5 @@
-async function awaitable(promise) {
+module.exports = {
+ async awaitable(promise) {
   const result = {
     error: undefined,
     data: undefined,
@@ -14,4 +15,5 @@ async function awaitable(promise) {
     result.error = error
   }
   return result
+} 
 }
