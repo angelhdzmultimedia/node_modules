@@ -7,7 +7,7 @@ window.awaitable = async function(promise) {
   } 
   try {
     const data = await promise
-    result.hasData = true 
+    result.hasData = !!data 
     result.data = data
   } catch(error) {
     result.hasError = true 
